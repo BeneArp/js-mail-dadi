@@ -8,3 +8,10 @@ const indirizziEmail = ["ginopippo@gmail.com", "giacomello@alice.it", "artemisia
 const emailUtene = document.querySelector("input");
 
 
+// creo un ciclo che controlli cosa c'è scritto nell'arrey
+for (let i = 0; i <indirizziEmail.length; i++) {
+
+    // stampo in console il contenuto dell'arrey
+    console.log(indirizziEmail[i]);
+
+}
