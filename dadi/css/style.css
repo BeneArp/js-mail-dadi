@@ -58,7 +58,11 @@ body{
     perspective: 1000px;
 }
 
-.faccia{
+img{
+    margin-top: 9em;
+}
+
+/* .faccia{
     border-left: 4.5vh solid transparent;
     border-right: 4.5vh solid transparent;
     border-bottom: 7.5vh solid rgb(59 57 74);
@@ -70,25 +74,25 @@ body{
     transform: translate(-50%, -50%);
     cursor: pointer;
 
-}
+} */
 
 /* faccie supeiori */
-.alto-destra{
+/* .alto-destra{
     top: 30%;
     left: 60%;
     transform: rotateZ(-50deg) translateX(-50px) translateY(-71px) translateZ(-80px) rotateX(50deg) rotateY(60deg);
-}
+} */
 
-.alto-sinistra{
+/* .alto-sinistra{
     top: 30%;
     left: 40%;
     transform: rotateZ(0) translateX(-30px) translateY(-3px) translateZ(-0) rotateX(70deg) rotateY(-2deg);
     border-right: 0.5vh solid transparent;
     border-left: 7.1vh solid transparent;
-}
+} */
 
 /* faccie centrali */
-.centrale{
+/* .centrale{
 
 }
 
@@ -111,10 +115,10 @@ body{
 .estrema-sinistra{
     left: 10%;
     transform: rotateZ(-10deg) translateX(87px) translateY(-32px) translateZ(-80px) rotateX(4deg) rotateY(75deg);
-}
+} */
 
 /* faccie inferiori */
-.basso-centrale{
+/* .basso-centrale{
     top: 70%;
     transform: rotateZ(-180deg) translateX(55px) translateY(80px) translateZ(-50px) rotateX(-60deg) rotateY(0);
 }
@@ -131,7 +135,7 @@ body{
     transform: rotateZ(130deg) translateX(-80px) translateY(28px) translateZ(-60px) rotateX(18deg) rotateY(70deg);
     border-left: 1.5vh solid transparent;
     border-right: 5vh solid transparent;
-}
+} */
 
 
 /* formattazione scritte */
@@ -169,7 +173,7 @@ strong{
 
 #numero-utente{
     position: absolute;
-    top: 50%;
+    top: 43%;
     left: 50%;
     z-index: 999;
     font-size: 50px;
