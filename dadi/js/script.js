@@ -26,6 +26,15 @@ document.getElementById("numero-pc").innerHTML = numeroRandomPc;
 
 
 
+// EVENTO PER RICARICARE LA PAGINA AL CLICK
+const reload = document.getElementById("clicca");
+
+reload.addEventListener('click',
+    function (){
+        location.reload();
+    }
+)
+
 
 
 // EVENTO AL CLICK
@@ -33,10 +42,11 @@ bottoneTiro.addEventListener('click',
 
     function(){
 
-        const immagineDado = document.querySelector("img");
+        // const immagineDado = document.querySelector("img");
 
-        // aggiunta animazioen rotazione al click
-        immagineDado.className = "rotazione"
+
+        reload.innerHTML = `Clicca qui <strong>per ricaricare la pagina<strong>`;
+
 
         // stampo in console per verifica
         console.log("hai cliccato");
@@ -44,8 +54,6 @@ bottoneTiro.addEventListener('click',
 
         // stampo in pagina il numero dell'utente
         campoNumeroUtente.innerText = `${numeroRandomUtente}`
-
-        campoNumeroUtente.className = "fade-long"
         
 
         // CONDIZIONI
@@ -53,8 +61,11 @@ bottoneTiro.addEventListener('click',
         // l'utente ha fatto 1
         if (numeroRandomUtente === 1){
 
-            esitoTrio.innerText = "FALLIMENTO"
-            tiroCritico.innerText = "CRITICO"
+            esitoTrio.innerHTML = "FALLIMENTO"
+            tiroCritico.innerHTML = "CRITICO"
+
+            esitoTrio.style.color = "red";
+            tiroCritico.style.color = "red";
 
         // l'utente ha fatto 20
         }else if (numeroRandomUtente === 20){
@@ -69,8 +80,11 @@ bottoneTiro.addEventListener('click',
 
         // l'utente ha fatto un numero più basso del pc
         }else{
-            esitoTrio.innerText = "FALLIMENTO"
+            esitoTrio.innerHTML = "FALLIMENTO"
+
+            esitoTrio.style.color = "red";
         }
     }
 
 )
+

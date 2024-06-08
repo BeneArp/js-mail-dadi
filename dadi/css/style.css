@@ -53,9 +53,9 @@ body{
     width: 90%;
     height: 49%;
     margin: 0 auto;
-    text-align: center;
     position: relative;
-    perspective: 1000px;
+    /* text-align: center;
+    perspective: 1000px; */
 }
 
 img{
