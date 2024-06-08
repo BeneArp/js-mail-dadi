@@ -33,6 +33,33 @@ bottoneTiro.addEventListener('click',
         // stampo in console per verifica
         console.log("hai cliccato");
 
+        // stampo in pagina il numero dell'utente
+        document.getElementById("numero-utente").innerHTML = numeroRandomUtente;
+        
+
+        // CONDIZIONI
+
+        // l'utente ha fatto 1
+        if (numeroRandomUtente === 1){
+
+            esitoTrio.innerText = "FALLIMENTO"
+            tiroCritico.innerText = "CRITICO"
+
+        // l'utente ha fatto 20
+        }else if (numeroRandomUtente === 20){
+
+            esitoTrio.innerText = "SUCCESSO"
+            tiroCritico.innerText = "CRITICO"
+
+        // l'utente ha da fatto un numero più alto del pc
+        }else if(numeroRandomUtente > numeroRandomPc){
+
+            esitoTrio.innerText = "SUCCESSO"
+
+        // l'utente ha fatto un numero più basso del pc
+        }else{
+            esitoTrio.innerText = "FALLIMENTO"
+        }
     }
 
 )
