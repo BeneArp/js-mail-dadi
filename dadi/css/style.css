@@ -198,3 +198,57 @@ strong{
     left: 50%;
     transform: translate(-50%);
 }
+
+
+.rotazione{
+    animation-name: rotazione;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotazione {
+    0%{
+        transform: rotate(0);
+    }
+    
+    100%{
+        transform: rotate(-360deg);
+    }
+
+}
+
+
+.fade{
+    animation-name: opacita;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes opacita {
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+
+}
+
+.fade-long{
+    animation-name: opacita;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0.8s;
+}
+
+@keyframes opacita {
+    0%{
+        opacity: 0;
+    }
+    
+    100%{
+        opacity: 1;
+    }
+
+}

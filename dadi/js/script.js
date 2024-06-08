@@ -10,7 +10,8 @@ const bottoneTiro = document.getElementById("dado");
 const esitoTrio = document.getElementById("esito");
 // titolo per valore critico
 const tiroCritico = document.getElementById("critico");
-
+// campo numero utente
+const campoNumeroUtente = document.getElementById("numero-utente");
 
 
 // GENERAZIONE NUMERI
@@ -26,15 +27,25 @@ document.getElementById("numero-pc").innerHTML = numeroRandomPc;
 
 
 
+
 // EVENTO AL CLICK
 bottoneTiro.addEventListener('click',
 
     function(){
+
+        const immagineDado = document.querySelector("img");
+
+        // aggiunta animazioen rotazione al click
+        immagineDado.className = "rotazione"
+
         // stampo in console per verifica
         console.log("hai cliccato");
 
+
         // stampo in pagina il numero dell'utente
-        document.getElementById("numero-utente").innerHTML = numeroRandomUtente;
+        campoNumeroUtente.innerText = `${numeroRandomUtente}`
+
+        campoNumeroUtente.className = "fade-long"
         
 
         // CONDIZIONI
