@@ -13,3 +13,38 @@ body{
 
 
 
+.container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.sfondo{
+    margin: 5em auto;
+    background: linear-gradient(-210deg, rgba(2,0,36,1) 0%, rgba(51,34,47,1));
+    border-radius: 100px;
+}
+
+.sfondo-1{
+    width: 33vw;
+    height: 33vw;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -14%);
+    border: 4px solid rgb(151 109 60);
+}
+
+.sfondo-2{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 25vw;
+    height: 45vw;
+    border-radius: 250px;
+    border-top: 4px solid rgb(151 109 60);
+    border-bottom: 4px solid rgb(151 109 60);
+    text-align: center;
+}
+
+
