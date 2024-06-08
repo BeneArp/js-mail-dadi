@@ -26,8 +26,8 @@ body{
 }
 
 .sfondo-1{
-    width: 33vw;
-    height: 33vw;
+    width: 800px;
+    height: 800px;
     position: absolute;
     top: 20%;
     left: 50%;
@@ -39,8 +39,8 @@ body{
     position: absolute;
     left: 50%;
     transform: translate(-50%);
-    width: 25vw;
-    height: 45vw;
+    width: 600px;
+    height: 1100px;
     border-radius: 250px;
     border-top: 4px solid rgb(151 109 60);
     border-bottom: 4px solid rgb(151 109 60);
@@ -173,7 +173,7 @@ strong{
 
 #numero-utente{
     position: absolute;
-    top: 43%;
+    top: 45%;
     left: 50%;
     z-index: 999;
     font-size: 50px;
@@ -185,7 +185,7 @@ strong{
     margin-bottom: 2em;
     font-size: 60px;
     position: absolute;
-    bottom: 210px;
+    bottom: 18%;
     left: 50%;
     transform: translate(-50%);
 }
@@ -194,7 +194,7 @@ strong{
     font-size: 60px;
     position: absolute;
     margin-bottom: 2em;
-    bottom: 150px;
+    bottom: 12%;
     left: 50%;
     transform: translate(-50%);
 }
