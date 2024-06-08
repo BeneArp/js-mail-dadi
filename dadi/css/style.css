@@ -151,3 +151,46 @@ h2{
     cursor: pointer;
 }
 
+h3{
+    display: inline-block;
+    color: rgb(207 204 196);
+    font-size: 25px;
+    background-color: rgb(29 21 20);
+    padding: 0.4em 1em;
+    border: 2px solid  rgb(169 137 112);
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+strong{
+    color: rgb(169 137 112);
+}
+
+#numero-utente{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+    font-size: 50px;
+    transform: translate(-50%, -25%);
+    cursor: pointer;
+}
+
+#esito{
+    margin-bottom: 2em;
+    font-size: 60px;
+    position: absolute;
+    bottom: 210px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#critico{
+    font-size: 60px;
+    position: absolute;
+    margin-bottom: 2em;
+    bottom: 150px;
+    left: 50%;
+    transform: translate(-50%);
+}
