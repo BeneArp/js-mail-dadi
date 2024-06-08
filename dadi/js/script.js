@@ -42,25 +42,21 @@ bottoneTiro.addEventListener('click',
 
     function(){
 
-        const immagineDado = document.querySelector("img");
-
-        immagineDado.className = "rotazione";
-
-
-        reload.innerHTML = `Clicca qui <strong>per un altro round<strong>`;
-
-
         // stampo in console per verifica
         console.log("hai cliccato");
 
 
+        // riferimento dom per img del dado
+        const immagineDado = document.querySelector("img");
+        // aggiungo all'img la classe rotazione per far ruotare il "dado" ad ogni tiro
+        immagineDado.className = "rotazione";
+
+        // cambio la scritta per suggerire all'utente come ricaricare la pagina per giocare di nuovo
+        reload.innerHTML = `Clicca qui <strong>per un altro round<strong>`;
+
         // stampo in pagina il numero dell'utente
         campoNumeroUtente.innerText = `${numeroRandomUtente}`
 
-
-        esitoTrio.className = "fade-long"
-        tiroCritico.className = "fade-long"
-        campoNumeroUtente.className = "fade-middle"
         
 
         // CONDIZIONI
@@ -68,35 +64,43 @@ bottoneTiro.addEventListener('click',
         // l'utente ha fatto 1
         if (numeroRandomUtente === 1){
 
+            // definisco testo da stampare in pagina
             esitoTrio.innerHTML = "FALLIMENTO"
             tiroCritico.innerHTML = "CRITICO"
 
+            // coloro scritte e numero di rosso
             esitoTrio.style.color = "red";
             tiroCritico.style.color = "red";
+            campoNumeroUtente.style.color = "red";
 
         // l'utente ha fatto 20
         }else if (numeroRandomUtente === 20){
 
+            // definisco testo da stampare in pagina
             esitoTrio.innerText = "SUCCESSO"
             tiroCritico.innerText = "CRITICO"
 
         // l'utente ha da fatto un numero più alto del pc
         }else if(numeroRandomUtente > numeroRandomPc){
 
+            // definisco testo da stampare in pagina
             esitoTrio.innerText = "SUCCESSO"
 
         // l'utente ha fatto un numero più basso del pc
         }else{
+            // definisco testo da stampare in pagina
             esitoTrio.innerHTML = "FALLIMENTO"
 
+            // coloro scritta e numero di rosso
             esitoTrio.style.color = "red";
+            campoNumeroUtente.style.color = "red";
         }
 
     }
 
 )
 
-
+// attivo la transizione per modificare l'opacità dei campi selezionati
 function fadeIn(){
     campoNumeroUtente.style.opacity = '1';
     esitoTrio.style.opacity = '1';

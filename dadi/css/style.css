@@ -204,7 +204,7 @@ strong{
     left: 50%;
     transform: translate(-50%);
     transition: opacity 0.5s;
-    transition-delay: 1.8s;
+    transition-delay: 1.7s;
     opacity: 0;
 }
 
