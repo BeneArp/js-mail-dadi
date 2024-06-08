@@ -134,4 +134,20 @@ body{
 }
 
 
+/* formattazione scritte */
+h2{
+    color: rgb(207 204 196);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#livello-difficolta{
+    margin-top: 6em;
+}
+
+#numero-pc{
+    font-size: 90px;
+    margin-top: 0.3em;
+    cursor: pointer;
+}
 
