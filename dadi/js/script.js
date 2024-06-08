@@ -10,3 +10,15 @@ const bottoneTiro = document.getElementById("dado");
 const esitoTrio = document.getElementById("esito");
 // titolo per valore critico
 const tiroCritico = document.getElementById("critico");
+
+
+
+// GENERAZIONE NUMERI
+
+// genero un numero random per il pc per l'utente
+let numeroRandomUtente = Math.floor((Math.random() * 20) + 1);
+
+// genero un numero random per il pc
+let numeroRandomPc = Math.floor((Math.random() * 20) + 1);
+// lo stampo in pagina
+document.getElementById("numero-pc").innerHTML = numeroRandomPc;
