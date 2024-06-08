@@ -42,7 +42,9 @@ bottoneTiro.addEventListener('click',
 
     function(){
 
-        // const immagineDado = document.querySelector("img");
+        const immagineDado = document.querySelector("img");
+
+        immagineDado.className = "rotazione";
 
 
         reload.innerHTML = `Clicca qui <strong>per ricaricare la pagina<strong>`;
@@ -54,6 +56,11 @@ bottoneTiro.addEventListener('click',
 
         // stampo in pagina il numero dell'utente
         campoNumeroUtente.innerText = `${numeroRandomUtente}`
+
+
+        esitoTrio.className = "fade-long"
+        tiroCritico.className = "fade-long"
+        campoNumeroUtente.className = "fade-middle"
         
 
         // CONDIZIONI
