@@ -48,3 +48,90 @@ body{
 }
 
 
+/* formattazione dado */
+#dado{
+    width: 90%;
+    height: 49%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    perspective: 1000px;
+}
+
+.faccia{
+    border-left: 4.5vh solid transparent;
+    border-right: 4.5vh solid transparent;
+    border-bottom: 7.5vh solid rgb(59 57 74);
+
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+}
+
+/* faccie supeiori */
+.alto-destra{
+    top: 30%;
+    left: 60%;
+    transform: rotateZ(-50deg) translateX(-50px) translateY(-71px) translateZ(-80px) rotateX(50deg) rotateY(60deg);
+}
+
+.alto-sinistra{
+    top: 30%;
+    left: 40%;
+    transform: rotateZ(0) translateX(-30px) translateY(-3px) translateZ(-0) rotateX(70deg) rotateY(-2deg);
+    border-right: 0.5vh solid transparent;
+    border-left: 7.1vh solid transparent;
+}
+
+/* faccie centrali */
+.centrale{
+
+}
+
+.destra{
+    left: 70%;
+    transform: rotateZ(55deg) translateX(-120.5px) translateY(45px) translateZ(-50px) rotateX(40deg) rotateY(8deg);
+}
+
+
+.estrema-destra{
+    left: 90%;
+    transform: rotateZ(10deg) translateX(-190px) translateY(-15px) translateZ(-150px) rotateX(10deg) rotateY(-75deg);
+}
+
+.sinistra{
+    left: 30%;
+    transform: rotateZ(-55deg) translateX(58px) translateY(-48px) translateZ(-50px) rotateX(-43deg) rotateY(6deg);
+}
+
+.estrema-sinistra{
+    left: 10%;
+    transform: rotateZ(-10deg) translateX(87px) translateY(-32px) translateZ(-80px) rotateX(4deg) rotateY(75deg);
+}
+
+/* faccie inferiori */
+.basso-centrale{
+    top: 70%;
+    transform: rotateZ(-180deg) translateX(55px) translateY(80px) translateZ(-50px) rotateX(-60deg) rotateY(0);
+}
+
+.basso-destra{
+    top: 70%;
+    left: 70%;
+    transform: rotateZ(-126deg) translateX(140px) translateY(-54px) translateZ(-60px) rotateX(-20deg) rotateY(85deg);
+}
+
+.basso-sinsitra{
+    top: 70%;
+    left: 30%;
+    transform: rotateZ(130deg) translateX(-80px) translateY(28px) translateZ(-60px) rotateX(18deg) rotateY(70deg);
+    border-left: 1.5vh solid transparent;
+    border-right: 5vh solid transparent;
+}
+
+
+
