@@ -47,7 +47,7 @@ bottoneTiro.addEventListener('click',
         immagineDado.className = "rotazione";
 
 
-        reload.innerHTML = `Clicca qui <strong>per ricaricare la pagina<strong>`;
+        reload.innerHTML = `Clicca qui <strong>per un altro round<strong>`;
 
 
         // stampo in console per verifica
@@ -91,7 +91,14 @@ bottoneTiro.addEventListener('click',
 
             esitoTrio.style.color = "red";
         }
+
     }
 
 )
 
+
+function fadeIn(){
+    campoNumeroUtente.style.opacity = '1';
+    esitoTrio.style.opacity = '1';
+    tiroCritico.style.opacity = '1';
+}

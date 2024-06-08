@@ -179,6 +179,8 @@ strong{
     font-size: 50px;
     transform: translate(-50%, -25%);
     cursor: pointer;
+    transition: opacity 0.5s;
+    transition-delay: 0.8s;
     opacity: 0;
 }
 
@@ -189,6 +191,8 @@ strong{
     bottom: 18%;
     left: 50%;
     transform: translate(-50%);
+    transition: opacity 0.5s;
+    transition-delay: 1.3s;
     opacity: 0;
 }
 
@@ -199,6 +203,8 @@ strong{
     bottom: 12%;
     left: 50%;
     transform: translate(-50%);
+    transition: opacity 0.5s;
+    transition-delay: 1.8s;
     opacity: 0;
 }
 
@@ -238,13 +244,13 @@ strong{
 
 }
 
-.fade-long{
+/* .fade-long{
     animation-name: opacita;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-delay: 1s;
-}
-
+} */
+/* 
 @keyframes opacita {
     0%{
         opacity: 0;
@@ -254,16 +260,16 @@ strong{
         opacity: 1;
     }
 
-}
+} */
 
-.fade-middle{
+/* .fade-middle{
     animation-name: opacita;
     animation-duration: 1s;
     animation-timing-function: linear;
     animation-delay: 0.8s;
-}
+} */
 
-@keyframes opacita {
+/* @keyframes opacita {
     0%{
         opacity: 0;
     }
@@ -272,5 +278,5 @@ strong{
         opacity: 1;
     }
 
-}
+} */
 
