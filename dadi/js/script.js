@@ -22,3 +22,17 @@ let numeroRandomUtente = Math.floor((Math.random() * 20) + 1);
 let numeroRandomPc = Math.floor((Math.random() * 20) + 1);
 // lo stampo in pagina
 document.getElementById("numero-pc").innerHTML = numeroRandomPc;
+
+
+
+
+// EVENTO AL CLICK
+bottoneTiro.addEventListener('click',
+
+    function(){
+        // stampo in console per verifica
+        console.log("hai cliccato");
+
+    }
+
+)
