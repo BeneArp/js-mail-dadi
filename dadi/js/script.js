@@ -12,17 +12,15 @@ const esitoTrio = document.getElementById("esito");
 const tiroCritico = document.getElementById("critico");
 // campo numero utente
 const campoNumeroUtente = document.getElementById("numero-utente");
+// campo numero pc
+const campoNumeroPc = document.getElementById("numero-pc");
 
 
 // GENERAZIONE NUMERI
-
-// genero un numero random per il pc per l'utente
-let numeroRandomUtente = Math.floor((Math.random() * 20) + 1);
-
 // genero un numero random per il pc
 let numeroRandomPc = Math.floor((Math.random() * 20) + 1);
-// lo stampo in pagina
-document.getElementById("numero-pc").innerHTML = numeroRandomPc;
+// genero un numero random per il pc per l'utente
+let numeroRandomUtente = Math.floor((Math.random() * 20) + 1);
 
 
 
@@ -54,7 +52,11 @@ bottoneTiro.addEventListener('click',
         // cambio la scritta per suggerire all'utente come ricaricare la pagina per giocare di nuovo
         reload.innerHTML = `Clicca qui <strong>per un altro round<strong>`;
 
-        // stampo in pagina il numero dell'utente
+
+        // STAMPO NUMERI IN PAGINA
+        // numero pc
+        campoNumeroPc.innerText = `${numeroRandomPc}`
+        // numero utente
         campoNumeroUtente.innerText = `${numeroRandomUtente}`
 
         
@@ -105,4 +107,6 @@ function fadeIn(){
     campoNumeroUtente.style.opacity = '1';
     esitoTrio.style.opacity = '1';
     tiroCritico.style.opacity = '1';
+    campoNumeroPc.style.opacity = '1';
+    
 }

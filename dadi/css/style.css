@@ -153,6 +153,9 @@ h2{
     font-size: 90px;
     margin-top: 0.3em;
     cursor: pointer;
+    min-height: 110px;
+    transition: opacity 0.5s;
+    opacity: 0;
 }
 
 h3{
@@ -226,7 +229,7 @@ strong{
 
 }
 
-
+/* 
 .fade{
     animation-name: opacita;
     animation-duration: 1s;
@@ -242,7 +245,7 @@ strong{
         opacity: 1;
     }
 
-}
+} */
 
 /* .fade-long{
     animation-name: opacita;
